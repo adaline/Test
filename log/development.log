@@ -1,0 +1,556 @@
+# Logfile created on Fri Mar 14 13:45:32 +0000 2008
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-03-14 13:47:48) [GET]
+  Session ID: 001f7619009e3ef58cbec3d8288444a4
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/page" with {:method=>:get}):
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2008-03-14 13:47:50) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2008-03-14 13:47:50) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+
+
+MissingSourceFile (no such file to load -- sqlite3):
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:291:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:291:in `connection='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:259:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2008-03-14 13:48:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2008-03-14 13:48:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+
+
+MissingSourceFile (no such file to load -- sqlite3):
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:291:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:291:in `connection='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:259:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PagesController#new (for 127.0.0.1 at 2008-03-14 13:48:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+
+
+Processing PagesController#new (for 127.0.0.1 at 2008-03-14 13:48:20) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+
+
+MissingSourceFile (no such file to load -- sqlite3):
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:291:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:291:in `connection='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:259:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2008-03-14 13:49:52) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2008-03-14 13:50:03) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+
+
+RuntimeError (unknown error):
+    c:/ruby/lib/ruby/1.8/dl/import.rb:29:in `initialize'
+    c:/ruby/lib/ruby/1.8/dl/import.rb:29:in `dlopen'
+    c:/ruby/lib/ruby/1.8/dl/import.rb:29:in `dlload'
+    c:/ruby/lib/ruby/1.8/dl/import.rb:27:in `each'
+    c:/ruby/lib/ruby/1.8/dl/import.rb:27:in `dlload'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.1-x86-mswin32/lib/sqlite3/driver/dl/api.rb:63
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.1-x86-mswin32/lib/sqlite3/driver/dl/driver.rb:33
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.1-x86-mswin32/lib/sqlite3/database.rb:643:in `load_driver'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.1-x86-mswin32/lib/sqlite3/database.rb:641:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.1-x86-mswin32/lib/sqlite3/database.rb:641:in `load_driver'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.1-x86-mswin32/lib/sqlite3/database.rb:107:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `sqlite3_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:291:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:291:in `connection='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:259:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPRAGMA index_list(pages)[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2008-03-14 14:00:45) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Count (0.000000)[0m   [0;1mSELECT COUNT(*) FROM pages[0m
+  [4;35;1mPage Load (0.000000)[0m   [0mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.01600 (50%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pages/index]
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2008-03-14 14:01:00) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000000)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 2) [0m
+Rendering pages/edit
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.01600 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pages/edit/2]
+
+
+Processing PagesController#destroy (for 127.0.0.1 at 2008-03-14 14:01:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"destroy", "id"=>"2", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000000)[0m   [0mSELECT * FROM pages WHERE (pages."id" = 2) [0m
+  [4;36;1mPage Destroy (0.000000)[0m   [0;1m DELETE FROM pages
+ WHERE "id" = 2
+[0m
+Redirected to http://localhost:3000/pages
+Completed in 0.03100 (32 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/pages/destroy/2]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2008-03-14 14:01:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Count (0.000000)[0m   [0mSELECT COUNT(*) FROM pages[0m
+  [4;36;1mPage Load (0.000000)[0m   [0;1mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01500 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2008-03-14 14:01:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering pages/new
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pages/new]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2008-03-14 14:01:30) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"body"=>"Cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock. Cock.", "title"=>"Cock", "author"=>"Cockmeister", "action"=>"new", "controller"=>"pages"}
+  [4;35;1mPage Create (0.000000)[0m   [0mINSERT INTO pages ("updated_at", "body", "title", "author", "created_at") VALUES('2008-03-14 14:01:30', 'Cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock. Cock.', 'Cock', 'Cockmeister', '2008-03-14 14:01:30')[0m
+Redirected to http://localhost:3000/pages
+Completed in 0.03200 (31 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/pages/new]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2008-03-14 14:01:30) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Count (0.000000)[0m   [0;1mSELECT COUNT(*) FROM pages[0m
+  [4;35;1mPage Load (0.000000)[0m   [0mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01600 (51%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2008-03-14 14:01:44) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000000)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 3) [0m
+Rendering pages/edit
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01600 (51%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pages/edit/3]
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2008-03-14 14:02:43) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"body"=>"Cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock. Cock.", "title"=>"'><script>alert('arse')</script><'", "author"=>"Cockmeister", "action"=>"edit", "id"=>"3", "controller"=>"pages"}
+  [4;35;1mPage Load (0.015000)[0m   [0mSELECT * FROM pages WHERE (pages."id" = 3) [0m
+  [4;36;1mPage Update (0.000000)[0m   [0;1mUPDATE pages SET "created_at" = '2008-03-14 14:01:30', "author" = 'Cockmeister', "title" = '''><script>alert(''arse'')</script><''', "body" = 'Cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock. Cock.', "updated_at" = '2008-03-14 14:02:43' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/pages
+Completed in 0.03100 (32 reqs/sec) | DB: 0.01500 (48%) | 302 Found [http://localhost/pages/edit/3]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2008-03-14 14:02:43) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Count (0.000000)[0m   [0mSELECT COUNT(*) FROM pages[0m
+  [4;36;1mPage Load (0.000000)[0m   [0;1mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pages]
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to AddEmailAddress (2)
+  [4;35;1mSQL (0.016000)[0m   [0mALTER TABLE pages ADD "email" varchar(255)[0m
+  [4;36;1mSQL (0.016000)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.000000)[0m   [0mUPDATE schema_info SET version = 2[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPRAGMA index_list(pages)[0m
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2008-03-14 14:14:48) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000000)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 3) [0m
+Rendering pages/edit
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pages/edit/3]
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2008-03-14 14:14:56) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"body"=>"Cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock. Cock.", "title"=>"asdsad", "author"=>"Cockmeister", "action"=>"edit", "id"=>"3", "controller"=>"pages", "email"=>"asdasd"}
+  [4;35;1mPage Load (0.000000)[0m   [0mSELECT * FROM pages WHERE (pages."id" = 3) [0m
+  [4;36;1mPage Update (0.000000)[0m   [0;1mUPDATE pages SET "created_at" = '2008-03-14 14:01:30', "email" = 'asdasd', "author" = 'Cockmeister', "title" = 'asdsad', "body" = 'Cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock cock. Cock.', "updated_at" = '2008-03-14 14:14:56' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/pages
+Completed in 0.03100 (32 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/pages/edit/3]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2008-03-14 14:14:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Count (0.000000)[0m   [0mSELECT COUNT(*) FROM pages[0m
+  [4;36;1mPage Load (0.000000)[0m   [0;1mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01500 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2008-03-14 14:14:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000000)[0m   [0mSELECT * FROM pages WHERE (pages."id" = 3) [0m
+Rendering pages/edit
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pages/edit/3]
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.015000)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreatePages (1)
+  [4;35;1mSQL (0.016000)[0m   [0mCREATE TABLE pages ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "body" varchar(255) DEFAULT NULL, "author" varchar(255) DEFAULT NULL, "email" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mPRAGMA index_list(pages)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreatePages (1)
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE TABLE pages ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "body" varchar(255) DEFAULT NULL, "author" varchar(255) DEFAULT NULL, "email" varchar(255) DEFAULT NULL, "reference" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mPRAGMA index_list(pages)[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2008-03-14 14:52:55) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Count (0.000000)[0m   [0;1mSELECT COUNT(*) FROM pages[0m
+  [4;35;1mPage Load (0.000000)[0m   [0mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pages/]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2008-03-14 14:52:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering pages/new
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01600 (51%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pages/new]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2008-03-14 14:53:04) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"reference"=>"Google", "body"=>"fetetgeg", "title"=>"asd", "author"=>"fewfw", "action"=>"new", "controller"=>"pages", "email"=>"fwef"}
+  [4;36;1mPage Create (0.000000)[0m   [0;1mINSERT INTO pages ("reference", "updated_at", "body", "title", "author", "created_at", "email") VALUES('Google', '2008-03-14 14:53:04', 'fetetgeg', 'asd', 'fewfw', '2008-03-14 14:53:04', 'fwef')[0m
+Redirected to http://localhost:3000/pages
+Completed in 0.04600 (21 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/pages/new]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2008-03-14 14:53:05) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Count (0.000000)[0m   [0mSELECT COUNT(*) FROM pages[0m
+  [4;36;1mPage Load (0.000000)[0m   [0;1mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01500 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2008-03-14 14:53:07) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000000)[0m   [0mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering pages/edit
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01600 (51%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pages/edit/1]
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2008-03-14 14:53:10) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"reference"=>"Yahoo!", "body"=>"fetetgeg", "title"=>"asd", "author"=>"fewfw", "action"=>"edit", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000000)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+  [4;35;1mPage Update (0.000000)[0m   [0mUPDATE pages SET "created_at" = '2008-03-14 14:53:04', "email" = NULL, "author" = 'fewfw', "reference" = 'Yahoo!', "title" = 'asd', "body" = 'fetetgeg', "updated_at" = '2008-03-14 14:53:10' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/pages
+Completed in 0.03200 (31 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/pages/edit/1]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2008-03-14 14:53:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Count (0.000000)[0m   [0;1mSELECT COUNT(*) FROM pages[0m
+  [4;35;1mPage Load (0.000000)[0m   [0mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01600 (51%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2008-03-14 14:53:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6bf91e271f975b9ff2efe97a423364d624daff8f
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000000)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering pages/edit
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pages/edit/1]
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreatePages (1)
+  [4;36;1mSQL (0.000000)[0m   [0;1mDROP TABLE pages[0m
+  [4;35;1mSQL (0.000000)[0m   [0mUPDATE schema_info SET version = 0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
