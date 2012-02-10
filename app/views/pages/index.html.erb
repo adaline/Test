@@ -1,0 +1,21 @@
+<h1>Pages</h1>
+
+<p>There <%= (@pages.count==1)? 'is' : 'are' %> currently <%= pluralize(@pages.count, 'page' ) %>, <%= link_to 'create a new one', new_page_path %>.</p>
+
+<table>
+	<tr>
+		<th>Title</th>
+		<th>Last updated</th>
+		<th></th>
+		<th></th>
+	</tr>
+
+	<% @pages.each do |page| %>
+		<tr class="<%= cycle 'odd','even' %>">
+    		<td><%= page.title %></td>
+    		<td><%= page.updated_on %></td>
+    		<td><%= link_to "Edit", edit_page_path(page) %></td>
+    		<td><%= link_to 'Delete', page_path(page) , :method => :delete, :confirm => 'Are you sure?' %></td>
+    	</tr>
+	<% end %>
+</table>

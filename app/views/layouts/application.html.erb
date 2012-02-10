@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= display_meta_tags :site => 'RawNet Pages' %>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="container_12">
+		<div id="content">
+			<%= render 'shared/notification' %>
+			<%= yield %>
+			<div class="clear"></div>
+		</div>
+	</div>
+</body>
+</html>

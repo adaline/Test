@@ -1,41 +1,42 @@
 class PagesController < ApplicationController
     
   def index
-    @total = Page.count_by_sql("SELECT COUNT(*) FROM pages")
-    @pages = Page.find(:all)
+    @pages = Page.page(params[:page]).per(10)
+  end
+
+  def show
+    @page = Page.find(params[:id])
   end
   
   def new
     @page = Page.new
-    
-    if request.post?
-      @page.title = params[:title]
-      @page.author = params[:author]
-      @page.email = params[:email]
-      @page.body = params[:body]
-      @page.reference = params[:reference]
-      @page.save
-      redirect_to :action => 'index'
+  end
+
+  def create
+    @page = Page.new(params[:page])
+    if @page.save
+      redirect_to pages_url, :notice => 'Page saved'
+    else
+      render :new
     end
   end
     
   def edit
     @page = Page.find(params[:id])
-    
-    if request.post?
-      @page.title = params[:title]
-      @page.author = params[:author]
-      @page.email = params[:email]
-      @page.body = params[:body]
-      @page.reference = params[:reference]
-      @page.save
-      redirect_to :action => 'index'
+  end
+
+  def update
+    @page = Page.find(params[:id])
+    if @page.update_attributes(params[:page])
+      redirect_to pages_url, :notice => 'Page updated'
+    else
+      render :edit
     end
   end
     
   def destroy
     @page = Page.find(params[:id])
     @page.destroy
-    redirect_to :action => 'index'
+    redirect_to pages_url, :notice => 'Page deleted'
   end
 end
