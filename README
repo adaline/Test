@@ -11,5 +11,5 @@ Finaly to launch run:
 
 rails s
 
-Then navigate to http://localhost:3000
+Then navigate to http://localhost:3000/
 
