@@ -11,12 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 3) do
+ActiveRecord::Schema.define(:version => 2) do
 
   create_table "pages", :force => true do |t|
     t.string   "title"
-    t.string   "text"
-    t.integer  "user_id"
+    t.text     "body"
+    t.string   "author"
+    t.string   "email"
     t.integer  "reference_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
@@ -24,15 +25,9 @@ ActiveRecord::Schema.define(:version => 3) do
 
   add_index "pages", ["reference_id"], :name => "index_pages_on_reference_id"
   add_index "pages", ["title"], :name => "index_pages_on_title"
-  add_index "pages", ["user_id"], :name => "index_pages_on_user_id"
 
   create_table "references", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "users", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

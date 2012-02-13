@@ -1,7 +1,8 @@
 class PagesController < ApplicationController
     
   def index
-    @pages = Page.page(params[:page]).per(10)
+    # Paginate, showing 5 itesm per page
+    @pages = Page.order(:title).page(params[:page]).per(5)
   end
 
   def show

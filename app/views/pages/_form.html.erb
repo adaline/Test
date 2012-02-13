@@ -11,32 +11,23 @@
 	<% end %>
 	
 	<div class="field">
-		<%= f.label :title %><br /><%= f.text_field :heading %>
-	</div>
-	
-	<div class="field">
-		<%= f.label :content %><br /><%= f.cktext_area :content %>
-	</div>
-	
-	<div class="field">
-		<%= f.label :url %><br />
-		<% if(@page.system) %>
-			<%= f.text_field :url, :disabled => true %>
-		<% else %>
-			<%= f.text_field :url %>
-		<% end %>
-	</div>
-
-	<div class="field">
 		<%= f.label :title %><br /><%= f.text_field :title %>
 	</div>
-
+	
 	<div class="field">
-		<%= f.label :description %><br /><%= f.text_field :description %>
+		<%= f.label :body %><br /><%= f.cktext_area :body %>
 	</div>
 
 	<div class="field">
-		<%= f.label :keywords %><br /><%= f.text_field :keywords %>
+		<%= f.label :author %><br /><%= f.text_field :author %>
+	</div>
+
+	<div class="field">
+		<%= f.label :email %><br /><%= f.text_field :email %>
+	</div>
+
+	<div class="field">
+		<%= f.label :reference_id %><br /><%= f.select :reference_id, Reference.all.map { |e| [e.name, e.id] } %>
 	</div>
 	
 	<div class="actions">

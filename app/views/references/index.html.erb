@@ -1,0 +1,21 @@
+<h2>References</h2>
+<p>There <%= (@references.count==1)? 'is' : 'are' %> currently <%= pluralize(@references.count, 'reference' ) %>, <%= link_to 'create a new one', new_reference_path, :class => :button %></p>
+
+<table class="listing">
+	<tr>
+		<th>Name</th>
+		<th>Last updated</th>
+		<th></th>
+		<th></th>
+	</tr>
+
+	<% @references.each do |reference| %>
+		<tr class="<%= cycle 'odd','even' %>">
+    		<td><%= reference.name %></td>
+    		<td><%= reference.updated_at %></td>
+    		<td><%= link_to "Edit", edit_reference_path(reference) %></td>
+    		<td><%= link_to 'Delete', reference_path(reference) , :method => :delete, :confirm => 'Are you sure?' %></td>
+    	</tr>
+	<% end %>
+</table>
+<%= paginate @references %>

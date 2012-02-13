@@ -1,10 +1,10 @@
-<h1>Pages</h1>
+<h2>Pages</h2>
+<p>There <%= (@pages.count==1)? 'is' : 'are' %> currently <%= pluralize(@pages.count, 'page' ) %>, <%= link_to 'create a new one', new_page_path, :class => :button %></p>
 
-<p>There <%= (@pages.count==1)? 'is' : 'are' %> currently <%= pluralize(@pages.count, 'page' ) %>, <%= link_to 'create a new one', new_page_path %>.</p>
-
-<table>
+<table class="listing">
 	<tr>
 		<th>Title</th>
+		<th>Reference</th>
 		<th>Last updated</th>
 		<th></th>
 		<th></th>
@@ -12,10 +12,12 @@
 
 	<% @pages.each do |page| %>
 		<tr class="<%= cycle 'odd','even' %>">
-    		<td><%= page.title %></td>
-    		<td><%= page.updated_on %></td>
+    		<td><%= link_to page.title, page_path(page) %></td>
+    		<td><%= page.reference.name %></td>
+    		<td><%= page.updated_at %></td>
     		<td><%= link_to "Edit", edit_page_path(page) %></td>
     		<td><%= link_to 'Delete', page_path(page) , :method => :delete, :confirm => 'Are you sure?' %></td>
     	</tr>
 	<% end %>
 </table>
+<%= paginate @pages %>

@@ -5,5 +5,6 @@ class CreateReferences < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :references, :name
   end
 end
